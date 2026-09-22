@@ -28,7 +28,7 @@ In der realen Fertigung der Lernfabrik führen Maßabweichungen, Reflexionen auf
 
 * **Hardware-Zusatzkosten:** < 50 € (Realisierung über ein stabiles Klemmstativ statt teurer industrieller Vision-Sensoren).
 * **Betrieb:** 100 % Offline-Edge-Inferenz auf der CPU ohne Cloud-Abhängigkeiten oder laufende API-Kosten.
-
+* **Andon-Visibilität:** Sofortige optische Signalisierung bei Fehlern (rotes Vollbild-Banner & Anomaly-Score) verhindert Fehlerschleppungen in nachgelagerte Montageschritte.
 ![Prüfaufbau in der Lernfabrik](assets/setup.png)
 *Abbildung 1: Prüfaufbau am Shopfloor mit senkrechter Kameraführung und Beleuchtungsabschirmung.*
 
@@ -95,7 +95,7 @@ Das Projekt nutzt den modernen Paketmanager [uv](https://github.com/astral-sh/uv
 
 ```bash
 # Repository klonen
-git clone https://github.com/lmaximeweber-rgb/Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System.git
+git clone [https://github.com/lmaximeweber-rgb/Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System.git](https://github.com/lmaximeweber-rgb/Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System.git)
 cd Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System
 
 # Abhängigkeiten installieren
@@ -105,7 +105,10 @@ uv sync
 uv run src/app.py
 ```
 
-### Standalone-Paket (Zero-Install für Werker)
-Für den produktiven Einsatz ohne Python-Installation steht unter **[Releases](../../releases)** ein vorkonfiguriertes Archiv bereit:
-1. ZIP-Datei aus den Releases herunterladen und entpacken.
-2. Anwendung per Doppelklick auf `Andon Prüfstation` starten (keine Admin-Rechte erforderlich).
+> **Hardware-Hinweis:** Das System sucht beim Start automatisch nach einer externen USB-Kamera (DirectShow-Index 1) und fällt bei Nichtverfügbarkeit nahtlos auf die interne Webcam (Index 0) zurück.
+
+### USB-Betriebskonzept (Zero-Install)
+
+Für den flexiblen Praxiseinsatz direkt am Shopfloor ohne Terminal-Interaktion oder Administratorrechte enthält das Projekt eine eigenständige Startarchitektur:
+* **Konsolenloser Start:** Ein VBScript-Wrapper (`scripts/start_silent.vbs`) startet die Qt-Oberfläche über `pythonw.exe`, ohne dass für den Werker störende Konsolenfenster im Hintergrund offenbleiben.
+* **Portable Pfadauflösung:** Alle Verknüpfungen und Pfade werden dynamisch und relativ aufgelöst (`%~dp0`), sodass die Prüfstation direkt von portablen Datenträgern lauffähig ist.
