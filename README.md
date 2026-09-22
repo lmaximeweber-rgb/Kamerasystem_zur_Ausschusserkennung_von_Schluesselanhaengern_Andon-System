@@ -22,7 +22,7 @@ In der realen Fertigung der Lernfabrik führen Maßabweichungen, Reflexionen auf
 * **Betrieb:** 100 % Offline-Edge-Inferenz auf der CPU ohne Cloud-Abhängigkeiten oder laufende API-Kosten.
 * **Andon-Visibilität:** Sofortige optische Signalisierung bei Fehlern (rotes Vollbild-Banner & Anomaly-Score) verhindert Fehlerschleppungen in nachgelagerte Montageschritte.
 
-![Prüfaufbau in der Lernfabrik](assets/setup.png)
+<img src="assets/setup.png" width="500" alt="Prüfaufbau in der Lernfabrik" />
 *Abbildung 1: Prüfaufbau am Shopfloor mit senkrechter Kameraführung und Beleuchtungsabschirmung.*
 
 ---
