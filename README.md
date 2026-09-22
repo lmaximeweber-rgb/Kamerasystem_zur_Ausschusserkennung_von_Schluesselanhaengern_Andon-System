@@ -88,7 +88,7 @@ Das Projekt nutzt den modernen Paketmanager [uv](https://github.com/astral-sh/uv
 
 ```bash
 # Repository klonen
-git clone [https://github.com/lmaximeweber-rgb/Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System.git](https://github.com/lmaximeweber-rgb/Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System.git)
+git clone https://github.com/lmaximeweber-rgb/Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System.git
 cd Kamerasystem_zur_Ausschusserkennung_von_Schluesselanhaengern_Andon-System
 
 # Abhängigkeiten installieren
