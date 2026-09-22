@@ -8,15 +8,7 @@ Autonomes, echtzeitfähiges Edge-Computer-Vision-Assistenzsystem zur 100%-Prüfu
 
 Die Benutzeroberfläche reagiert schnell auf das Einlegen von Bauteilen, führt eine dreistufige Analyse durch und schlägt bei Fehlern sofort optisch Alarm:
 
-
-
-
-
 https://github.com/user-attachments/assets/263c2d34-01f8-47fe-8b8a-8c78e26a990e
-
-
-
-
 
 ---
 
@@ -29,6 +21,7 @@ In der realen Fertigung der Lernfabrik führen Maßabweichungen, Reflexionen auf
 * **Hardware-Zusatzkosten:** < 50 € (Realisierung über ein stabiles Klemmstativ statt teurer industrieller Vision-Sensoren).
 * **Betrieb:** 100 % Offline-Edge-Inferenz auf der CPU ohne Cloud-Abhängigkeiten oder laufende API-Kosten.
 * **Andon-Visibilität:** Sofortige optische Signalisierung bei Fehlern (rotes Vollbild-Banner & Anomaly-Score) verhindert Fehlerschleppungen in nachgelagerte Montageschritte.
+
 ![Prüfaufbau in der Lernfabrik](assets/setup.png)
 *Abbildung 1: Prüfaufbau am Shopfloor mit senkrechter Kameraführung und Beleuchtungsabschirmung.*
 
