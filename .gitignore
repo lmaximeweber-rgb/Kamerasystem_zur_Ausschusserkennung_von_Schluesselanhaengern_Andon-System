@@ -1,0 +1,74 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C-extensions
+*.so
+*.pyd
+
+# Virtual environments & uv
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Portable Python Laufzeitumgebung
+python_core/
+
+# Secrets, Zugangsdaten & lokale Umgebungsvariablen
+.env
+.env.*
+*.env
+*.secret
+*.key
+*.pem
+*.cert
+
+# Logs & temporäre Protokolldateien
+logs/
+*.log
+
+# Build & Packaging Artefakte
+build/
+dist/
+wheels/
+*.egg-info/
+*.egg
+*.manifest
+*.spec
+
+# Modellgewichte & Trainings-Artefakte (Schutz vor GitHub 100-MB-Limit)
+# HINWEIS: Die folgenden Einträge sind standardmäßig auskommentiert, damit bestehende Modelle
+# im Ordner 'models/' (z. B. vortrainierte OpenVINO .bin/.xml Modelle) im Repository erhalten bleiben.
+# Bei Bedarf (z. B. bei neuen Trainingsartefakten oder externem Gewichts-Hosting) das '#' entfernen:
+# *.pt
+# *.pth
+# *.onnx
+# *.bin
+# checkpoints/
+
+# Betriebssystem-Metadaten & Shortcuts (Windows / macOS)
+*.lnk
+Thumbs.db
+[Dd]esktop.ini
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# IDEs & Editoren
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.sublime-workspace
+*.sublime-project
+
+# KI- und Tool-Regeln (explizit ausgeschlossen)
+.clinerules

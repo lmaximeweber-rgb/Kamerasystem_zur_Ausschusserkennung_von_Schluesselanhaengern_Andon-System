@@ -1,0 +1,18 @@
+[project]
+name = "andon-system"
+version = "0.1.0"
+description = "Lernfabrik Andon Assistenz- und Prüfsystem"
+readme = "README.md"
+authors = [
+    { name = "Leonard Maxime Weber", email = "321834219+lmaximeweber-rgb@users.noreply.github.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "numpy>=2.5.3",
+    "opencv-python>=5.0.0.93",
+    "openvino>=2026.4.0",
+    "pyside6>=6.11.2",
+]
+
+[tool.uv]
+package = false
